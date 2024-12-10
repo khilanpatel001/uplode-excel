@@ -1,0 +1,111 @@
+/* styles.css */
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc; /* Soft light background */
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container styles */
+.container {
+    background-color: #ffffff; /* White background for the form */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 100%;
+    max-width: 400px; /* Ensures the form is compact and centered */
+    text-align: center;
+}
+
+/* Header styles */
+h1 {
+    margin-bottom: 20px;
+    color: #000000; /* Blue color for emphasis */
+    font-size: 24px;
+}
+
+/* Label styles */
+label {
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* File input styles */
+input[type="file"] {
+    padding: 10px;
+    background-color: #f7f7f7; /* Light background for file input */
+    border: 2px solid #ddd; /* Soft border */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+input[type="file"]:focus {
+    outline: none;
+    border-color: #007BFF; /* Blue border on focus */
+}
+
+/* Button styles */
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Download link button style */
+a {
+    text-decoration: none;
+}
+
+a button {
+    background-color: #28a745; /* Green for download button */
+}
+
+a button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
